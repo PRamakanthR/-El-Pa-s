@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [BrowserStack Suite]">
+  <test thread-count="5" parallel="tests" name="Test on Safari(failed)">
+    <parameter name="browser" value="safari"/>
+    <parameter name="version" value="14.0"/>
+    <parameter name="platform" value="macOS Big Sur"/>
+    <classes>
+      <class name="articles.ElPaisScraper">
+        <methods>
+          <include name="method" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- articles.ElPaisScraper -->
+    </classes>
+  </test> <!-- Test on Safari(failed) -->
+</suite> <!-- Failed suite [BrowserStack Suite] -->

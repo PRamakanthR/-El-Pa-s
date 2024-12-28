@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="BrowserParallelSuite" parallel="tests" thread-count="4">
+    <test name="ChromeTest">
+        <parameter name="browserName" value="chrome"/>
+        <classes>
+            <class name="articles.ElPaisScraper"/>
+        </classes>
+    </test>
+
+    <test name="FirefoxTest">
+        <parameter name="browserName" value="firefox"/>
+        <classes>
+            <class name="articles.ElPaisScraper"/>
+        </classes>
+    </test>
+
+    <test name="EdgeTest">
+        <parameter name="browserName" value="edge"/>
+        <classes>
+            <class name="articles.ElPaisScraper"/>
+        </classes>
+    </test>
+
+    <test name="SafariTest">
+        <parameter name="browserName" value="safari"/>
+        <classes>
+            <class name="articles.ElPaisScraper"/>
+        </classes>
+    </test>
+</suite>
