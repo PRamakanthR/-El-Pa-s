@@ -26,7 +26,7 @@ import org.testng.annotations.Test;
 
 public class ElPaisScraper {
 
-    private static final String DEEPL_API_KEY = "eb877034-bce5-4c1e-8666-3f5fd4293f1d:fx"; // Replace with your DeepL API key
+    private static final String DEEPL_API_KEY = "API_KEY"; // Replace with your DeepL API key
     private static final String DEEPL_API_URL = "https://api-free.deepl.com/v2/translate";
 
     private static Map<String, Integer> wordCountMap = new HashMap<>();
@@ -34,8 +34,8 @@ public class ElPaisScraper {
     @Test
     @Parameters({"browserName"})
     public void scrapeElPais(String browserName) {
-        String browserstackUsername = "ramakanthreddyre_K6qAiF"; 
-        String browserstackAccessKey = "oxz8gN35rres9X4ExWp8"; 
+        String browserstackUsername = "USER_NAME"; // Replace with your Browserstack Username
+        String browserstackAccessKey = "ACCESS_KEY"; // Replace with your Browserstack AccessKey
 
         WebDriver driver = null;
 
